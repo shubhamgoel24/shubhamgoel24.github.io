@@ -1,0 +1,364 @@
+header{  
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    padding-top: 2%;
+    z-index: 1;
+    float: left;
+    width: 38vw;
+}
+.menu{
+    display: inline-block;
+    background-color: rgba(0,0,0,0);
+    border: rgba(0,0,0,0);
+}
+.menu img{
+    height: 5vw;
+}
+.name{
+    font-size: 7vw;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.menuopen{
+    margin-top: 2%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    padding: 2%;
+}
+.menuopen a{
+    color: white;
+    font-size: 150%;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-right: 6%;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuopen a:hover{
+    color: black;
+    background-color: white;
+}
+.active{
+    background-color: #6190e8;
+}
+.menuclose{
+    display: none;
+}
+body{
+    background-image: linear-gradient(to right,#6190e8,#a7bfe8);
+    color: black;
+    background-size: cover;
+}
+.content{
+    margin: 13vh 5%;
+    font-size: 5vw;
+    padding: 4%;
+}
+.content{
+    background-color: rgba(255,255,255,.2);
+    border-radius: 25px;
+}
+ul li{
+    margin-bottom: 8%;
+}
+ul li ul li{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+#index .content{
+    margin-top: 7vh;
+}
+.ppic {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    border-radius: 20px;
+}
+
+.content h1{
+    font-size: xx-large;
+}
+.content .logo{
+    width: 4%;
+    min-width: 20px;
+}
+.info{
+    font-size: large;
+    overflow: auto;
+
+}
+
+.info a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+#education h2{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+#experience h2{
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+#certificates h2{
+    text-align: center;
+
+}
+#certificates .content div{
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.cert img{
+    width: 17%;
+    margin: 3%;
+    display: inline-block;
+    position: relative;
+}
+.cert p{
+    display: inline-block;
+    width: 70%;
+    float:left;
+    font-size: larger;
+    margin: 3%;
+}
+.cert a{
+    display: block;
+    color: blue;
+    margin-left: 3%;
+    margin-bottom: 3%;
+    clear: both;
+}
+
+
+
+
+
+
+
+#skills h2{
+    text-align: center;
+
+}
+.sklist progress{
+    width: 100%;
+}
+
+
+
+
+
+#container{
+    min-height: 100vh;
+    margin-bottom:-120px;
+}
+#container::after{
+    content: "";
+    display:block;
+    height: 120px;
+}
+
+footer{
+    height: 120px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 25px;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+footer h2{
+    color: black;
+    text-align: center;
+}
+footer img{
+    width: 8%;
+    min-width: 20px;
+    margin-left: 27%;
+}
+
+
+
+
+
+@media screen and (min-width:800px)
+{
+    header{
+        width: 20vw;
+    }
+    .menu img{
+        height: 3vw;
+        max-height: 40px;
+    }
+    .name{
+        font-size: 3vw;
+    }
+
+
+
+
+
+
+
+
+
+    #index .content{
+        margin-top: 10vh;
+        padding: 1%;
+    }
+    .ppic {
+        display: inline-block;
+        width: 55%;
+        margin-top: 0;
+        border-radius: 20px;
+        float: left;
+    }
+    .con{
+        margin-left: 3%;
+        display: inline-block;
+        width: 40%;
+    }
+    .intro{
+        font-size: large;
+    }
+    .content h1{
+        font-size: 5vw;
+    }
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    #education h2{
+        font-size: larger;
+    }
+    #education ul{
+        font-size: 60%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #experience h2{
+        font-size: larger;
+    }
+    #experience ul{
+        font-size: 60%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #certificates h2{
+        font-size: larger;
+    }
+    .cert{
+        height: 30vh;
+    }
+    .cert img{
+        width: 10%;
+    }
+    .cert p{
+        font-size: 70%;
+    }
+    .cert a{
+        display: inline-block;
+        font-size: x-large;
+        float: left;
+        margin-top: -4.5%
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    #skills h2{
+        font-size: larger;
+    }
+    .sklist{
+        font-size: 60%;
+    }
+    .sklist progress{
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    
+    footer{
+        height: 150px;
+    }
+    footer h2{
+        font-size: x-large;
+    }
+    footer img{
+        width: 7%;
+        margin-left: 29%;
+    }
+
+
+
+
+
+}
