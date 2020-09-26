@@ -1,98 +1,42 @@
 body{
     background-color: black;
 }
-
 table{
-    font-size: 80px;
+    font-size: 300%;
     margin: auto;
     color: aliceblue;
 }
-
-table td{
-    height: 100px;
-}
-
 table button{
-    height: 100px;
-    width: 100px;
-    font-size: 80px;
+    width: 21vw;
+    font-size: 100%;
     color: black;
-    margin: auto;
-    border-radius: 25px;
+    border-radius: 20px;
 }
-
 #ans{
     text-align: right;
     padding-right: 5%;
-    height: 90px;
-    width: 380px;
+    width: 82vw;
     margin-bottom: 5px;
     border-radius: 25px;
-    font-size: 80px;
+    font-size:100%;
+}
+.equal{
+    background-color: green;
+}
+.clear{
+    background-color: crimson;
 }
 
 
 
-@media screen and (max-width:400px)
+@media screen and (min-width:600px)
 {
-    table{
-        font-size: 10vh;
-    }
-    
-    table td{
-        height: 12vh;
-    }
-    
     table button{
-        height: 12vh;
-        width: 12vh;
-        font-size: 10vh;
-        color: black;
-        margin: auto;
-        border-radius: 20%;
+        width: 100px;
     }
     
     #ans{
-        text-align: right;
-        padding-right: 5%;
-        height: 12vh;
-        width: 46vh;
-        margin-bottom: 5px;
-        border-radius: 25px;
-        font-size: 12vh;
-    }
-
-
-}
-
-
-@media screen and (max-width:320px)
-{
-    table{
-        font-size: 20vw;
-    }
-    
-    table td{
-        height: 50px;
-    }
-    
-    table button{
-        height: 22vw;
-        width: 22vw;
-        font-size: 20vw;
-        color: black;
-        margin: auto;
-        border-radius: 25px;
-    }
-    
-    #ans{
-        text-align: right;
-        padding-right: 5%;
-        height: 90px;
-        width: 85vw;
-        margin-bottom: 5px;
-        border-radius: 25px;
-        font-size: 80px;
+        width: 380px;
     }
 
 
