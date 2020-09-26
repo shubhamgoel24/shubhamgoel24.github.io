@@ -30,3 +30,37 @@ table button{
     border-radius: 25px;
     font-size: 80px;
 }
+
+
+
+@media screen and (max-width:430px)
+{
+    table{
+        font-size: 20vw;
+    }
+    
+    table td{
+        height: 50px;
+    }
+    
+    table button{
+        height: 22vw;
+        width: 22vw;
+        font-size: 20vw;
+        color: black;
+        margin: auto;
+        border-radius: 25px;
+    }
+    
+    #ans{
+        text-align: right;
+        padding-right: 5%;
+        height: 90px;
+        width: 85vw;
+        margin-bottom: 5px;
+        border-radius: 25px;
+        font-size: 80px;
+    }
+
+
+}
