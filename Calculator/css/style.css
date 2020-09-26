@@ -1,0 +1,32 @@
+body{
+    background-color: black;
+}
+
+table{
+    font-size: 80px;
+    margin: auto;
+    color: aliceblue;
+}
+
+table td{
+    height: 100px;
+}
+
+table button{
+    height: 100px;
+    width: 100px;
+    font-size: 80px;
+    color: black;
+    margin: auto;
+    border-radius: 25px;
+}
+
+#ans{
+    text-align: right;
+    padding-right: 5%;
+    height: 90px;
+    width: 380px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+    font-size: 80px;
+}
