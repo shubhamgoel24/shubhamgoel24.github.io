@@ -1,3 +1,5 @@
+
+
 let screen= document.getElementById('ans'); 
 buttons = document.querySelectorAll('button');
 
@@ -10,12 +12,7 @@ for(item of buttons){
             screen.value="";
         }
 
-        if(inp=="<")
-        {
-            screen.value=screen.value.substring(0,screen.value.length-1);
-        }
-
-        else if(inp=='='){
+        if(inp=='='){
             try{
                 screen.value=eval(screen.value);
                 screen.value=screen.value.toString(10);
@@ -33,8 +30,10 @@ for(item of buttons){
             screen.value += inp;
         }
 
-        screen.value=screen.value;
-
     }) 
+    function clears()
+        {
+            screen.value=screen.value.substring(0,screen.value.length-1);
+        }
 
 } 

@@ -12,6 +12,12 @@ table button{
     color: black;
     border-radius: 20px;
 }
+table td img{
+    width: 40px;
+}
+#clear{
+    overflow: hidden;
+}
 #ans{
     text-align: right;
     padding-right: 5%;
@@ -33,6 +39,9 @@ table button{
 {
     table button{
         width: 100px;
+    }
+    table td img{
+        width: 40px;
     }
     
     #ans{
