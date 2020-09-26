@@ -33,7 +33,40 @@ table button{
 
 
 
-@media screen and (max-width:430px)
+@media screen and (max-width:400px)
+{
+    table{
+        font-size: 10vh;
+    }
+    
+    table td{
+        height: 12vh;
+    }
+    
+    table button{
+        height: 12vh;
+        width: 12vh;
+        font-size: 10vh;
+        color: black;
+        margin: auto;
+        border-radius: 20%;
+    }
+    
+    #ans{
+        text-align: right;
+        padding-right: 5%;
+        height: 12vh;
+        width: 46vh;
+        margin-bottom: 5px;
+        border-radius: 25px;
+        font-size: 12vh;
+    }
+
+
+}
+
+
+@media screen and (max-width:320px)
 {
     table{
         font-size: 20vw;
