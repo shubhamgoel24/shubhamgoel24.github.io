@@ -1,8 +1,9 @@
 
 .scene{
-    perspective: 2000px;
+    perspective: 1500px;
     transform-style: preserve-3d;
     padding: 20%;
+    transform: rotateX(-10deg) rotateY(-10deg);
 }
 .cube{
     position: absolute;
@@ -19,8 +20,9 @@
     height: 100%;
 }
 .face{
-    background-color: greenyellow;
+    background-color: rgba(173, 255, 47, 0.5);
     border: 3px solid black;
+    box-shadow: 20px 20px 20px 20px black inset;
 }
 .one{
     transform: translateZ(-150px);
@@ -71,8 +73,9 @@
     top: 80%;
     left: 50%;
     position: absolute;
-    background-color: lightblue;
-    border: 0px;
+    border: 5px solid black;
+    border-radius: 25px;
+    background-color: rgba(173, 216, 230, 0);
     font-size: 150px;
     transform: translateX(-50%);
 }
