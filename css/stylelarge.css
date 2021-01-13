@@ -1,0 +1,82 @@
+@media screen and (min-width:850px){
+    section{
+        padding-top: 2vw;
+    }
+    .navi{
+        background-color: rgba(1,1,1,0);
+        display: block;
+        float: right;
+        width: fit-content;
+        position: sticky;
+        right: 0px;
+        z-index: 10;
+        padding-right: 10px;
+    }
+    .invi{
+        background-color: rgba(1,1,1,1);
+        display: block;
+        width: fit-content;
+        position: sticky;
+        height: 20vh;
+    }
+    .navibar{
+        display: none;
+    }
+    .menuclose,.menuopen{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 25px;
+    }
+    #menubar a{
+        background-color: rgba(1,1,1,1);
+        width: 130px;
+        height: 40px;
+        color: white;
+        font-size: 150%;
+        display: inline-block;
+        text-decoration: none;
+        padding-bottom: 5px;
+    }
+    #menubar a:hover{
+        color: black;
+        background-color: white;
+    }
+
+
+    .fle{
+        margin-left: 2%;
+        display: flex;
+        justify-content: center;
+    }
+    .one,.two{
+        width: 20vw;
+    }
+    .three{
+        width: 25vw;
+    }
+    #profile img{
+        width: 17vw;
+        border-radius: 50%;
+        border: 1vw black solid;
+    }
+
+
+    .contain{
+        display: flex;
+        align-items: flex-start;
+    }
+    .left,.right{
+        width: 40vw;
+        display: inline-block;
+    }
+    .left h4{
+        text-align: end;
+    }
+
+    .sklist li{
+        display: inline-block;
+        width: 40vw;
+    }
+}
