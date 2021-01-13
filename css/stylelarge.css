@@ -28,6 +28,7 @@
         text-align: center;
         overflow: hidden;
         border-radius: 25px;
+        margin-top: 2%;
     }
     #menubar a{
         background-color: rgba(1,1,1,1);
