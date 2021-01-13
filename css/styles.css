@@ -112,12 +112,10 @@ header{
     display: block;
     text-align: center;
     overflow: hidden;
-    padding: 2%;
 }
 .menuopen a{
     color: white;
     font-size: 150%;
-    border-radius: 25px;
     text-decoration: none;
     margin-right: 6%;
     margin-left: auto;
