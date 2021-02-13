@@ -15,12 +15,7 @@ body{
 #setting{
     display: none;
 }
-#achivement{
-    display: none;
-}
-#user{
-    display: none;
-}
+
 
 
 .head{
@@ -29,24 +24,25 @@ body{
 }
 
 
-.botnav{
-    display: inline-block;
-    position: fixed;
-    bottom: 0px;
-    background-color: rgba(0,0,0,.5);
-    width: 100vw;
 
-}
 .nav{
-    display: flex;
-    justify-content:space-between;
-    margin: 14px 14px 14px 14px;
+    display: inline;
+    position: fixed;
+    float: right;
+    right: 5px;
+    bottom: 0px;
+    margin: 0px 14px 14px 0px;
 
 }
 .nav button{
     background-color: rgba(0,0,0,0);
     border: 0;
-
+}
+#homebutton{
+    display: none;
+}
+#settingsbutton{
+    display: block;
 }
 
 
