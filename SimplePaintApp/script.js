@@ -14,15 +14,13 @@ var tempX;
 var tempY;
 var moveindex;
 
-window.addEventListener('load', init);
-function init() 
+window.addEventListener('load', starts);
+function starts() 
 {
     canvas = document.getElementById("canva");
     context = canvas.getContext('2d');
     context.lineWidth = 4;
-    rectnumber=0;	
-    dragging = false;
-    backColor = "#111111";
+    rectnumber=0;
     rectlist = [];
     canvas.addEventListener('dblclick', deleterec);
     canvas.addEventListener('mousedown', dragStart);
@@ -95,20 +93,20 @@ function tog(){
 
     if(document.getElementById("move").innerHTML == "Draw")
     {
-        canvas.removeEventListener("mousedown", mouseDown, false);	
+        canvas.removeEventListener("mousedown", mouseDown);	
         document.getElementById("move").innerHTML="Move";
-        canvas.addEventListener('mousedown', dragStart, false);
-        canvas.addEventListener('mousemove', drag, false);
-        canvas.addEventListener('mouseup', dragStop, false);				
+        canvas.addEventListener('mousedown', dragStart);
+        canvas.addEventListener('mousemove', drag);
+        canvas.addEventListener('mouseup', dragStop);				
     }
     else if(document.getElementById("move").innerHTML == "Move")
     {         
     
-        canvas.removeEventListener("mousedown", dragStart, false);
-        canvas.removeEventListener("mousemove", drag, false);
-        canvas.removeEventListener("mouseup", dragStop, false);
+        canvas.removeEventListener("mousedown", dragStart);
+        canvas.removeEventListener("mousemove", drag);
+        canvas.removeEventListener("mouseup", dragStop);
         document.getElementById("move").innerHTML="Draw";
-        canvas.addEventListener('mousedown', mouseDown, false);
+        canvas.addEventListener('mousedown', mouseDown);
     }
 }
 
@@ -120,7 +118,7 @@ function drawrecs() {
     context.clearRect(0,0,canvas.width,canvas.height);		
     for (i=0; i < rectnumber; i++) {
 		context.beginPath();
-        context.rect(rectlist[i].x, rectlist[i].y, rectlist[i].width, rectlist[i].height,false);
+        context.rect(rectlist[i].x, rectlist[i].y, rectlist[i].width, rectlist[i].height);
 		context.closePath();
         context.fillStyle = rectlist[i].color;
         context.fill();
@@ -144,14 +142,7 @@ function deleterec(event)
         rectlist.splice(dragIndexDelete,1);
         rectnumber=rectnumber-1;
     }
-    if (event.preventDefault) {
-        event.preventDefault();
-    } 
-    else if (event.returnValue) {
-        event.returnValue = false;
-    } 
-    drawrecs();				
-    return false;
+    drawrecs();
 }
 
 
@@ -171,25 +162,18 @@ function mouseDown(event)
 		}
 	}
 	if (draggingMove) {
-		window.addEventListener("mousemove", mouseMove, false);
+		window.addEventListener("mousemove", mouseMove);
 	}
-	canvas.removeEventListener("mousedown", mouseDown, false);
-	window.addEventListener("mouseup", mouseUp, false);
-	if (event.preventDefault) {
-		event.preventDefault();
-	} 
-	else if (event.returnValue) {
-		event.returnValue = false;
-	} 
-	return false;
+	canvas.removeEventListener("mousedown", mouseDown);
+	window.addEventListener("mouseup", mouseUp);
 }
 	
 function mouseUp(event){
-	canvas.addEventListener("mousedown", mouseDown, false);
-	window.removeEventListener("mouseup", mouseUp, false);
+	canvas.addEventListener("mousedown", mouseDown);
+	window.removeEventListener("mouseup", mouseUp);
 	if (draggingMove) {
 		draggingMove = false;
-		window.removeEventListener("mousemove", mouseMove, false);
+		window.removeEventListener("mousemove", mouseMove);
 	}
 }
 
