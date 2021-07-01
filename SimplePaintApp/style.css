@@ -1,0 +1,32 @@
+#heading{
+    display: block;
+    height: 10vh;
+}
+#heading h1{
+    text-align: center;
+}
+
+#canva{
+    width: 800px;
+    height: 550px;
+    border: 3px black solid;
+    margin: auto;
+    display: block;
+}
+
+#clrbut{
+    width: 10vw;
+    height: 7vh;
+    margin: auto;
+    margin-top: 2vh;
+    display: flex;
+}
+button{
+    height: 100%;
+    width: 100%;
+    font-size: large;
+    box-shadow: black;
+    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
