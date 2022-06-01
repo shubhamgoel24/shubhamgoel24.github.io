@@ -1,421 +1,781 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
-    <title>Resume</title>
-    <script src="https://kit.fontawesome.com/15057286f2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/stylelarge.css">
-    <script src="js/file.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <header id="home">
-        <div class="tex">
-            <h1>Shubham Goel</h1>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="./code-alt-regular-24.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>Portfolio - Shubham Goel</title>
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <div>
+                <a
+                    href="javascript:void(250)"
+                    class="closebtn ac"
+                    onclick="closeNav()"
+                    >&#9932;</a
+                >
+                <a class="ac" href="#home">Home</a>
+                <a class="ac" href="#about">About Me</a>
+                <a class="ac" href="#education">Education</a>
+                <a class="ac" href="#experience">Experience</a>
+                <a class="ac" href="#Courses">Courses & Certificates</a>
+                <a class="ac" href="#projects">Projects</a>
+                <a class="ac" href="#skills">Skills</a>
+                <div class="logos">
+                    <a
+                        href="https://github.com/shubhamgoel24"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="logo"
+                        ><i class="bx bxl-github"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/shubhamgoel24/"
+                        class="logo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><i class="bx bxl-linkedin"></i
+                    ></a>
+                    <a
+                        href="mailto:sshubhamgoel24@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="logo"
+                        ><i class="bx bx-mail-send"></i
+                    ></a>
+                </div>
+                <div id="made_by">
+                    <i class="bx bx-code-alt"></i> Shubham Goel
+                </div>
+            </div>
         </div>
-    </header>
-    <div class="bot">
-        <a href="#profile">
-            <span style="color:#f3efe0; font-size:7vh; " class="arrow" >
-                <i class="fas fa-angle-down"></i>
-            </span>
-        </a>
-    </div>
-
-
-    <main>
-        <div class="navi">
-            <div class="invi">
-            </div>
-            <div class="navibar">
-                <button class="menu" onclick="openmenu()"><img src="img/navbar.png" alt="menu"/></button>
-            </div>
-    
-            <nav class="menuclose" id="menubar">
-                <a href="#home" onclick="openmenu()">Home</a><br>
-                <a href="#profile" onclick="openmenu()">Profile</a><br>
-                <a href="#experience" onclick="openmenu()">Experience</a><br>
-                <a href="#education" onclick="openmenu()">Education</a><br>
-                <a href="#skills" onclick="openmenu()">Skills</a><br>
-                <a href="#contact" onclick="openmenu()">Contact</a><br>
-            </nav>
+        <div class="nav">
+            <span id="open" onclick="openNav()">&#9776;</span>
+            <!-- <div class="center">
+                    <input data-tooltip="Change Mode" type="checkbox" id="checkbox">
+                </div> -->
         </div>
-
-
-        <section id="profile">
-            <h2>Profile</h2>
-            Student,Web Developer,Coder
-            <hr>
-            <br>
-            <div class="fle">
-                <div class="one">
-                    <h3>About Me</h3>
-                    <p class="intro">
-                        Hello Everybody, I Am third year undergratuate (2019-2023) at Northern India Engineering College (GGSIPU).
-                        Being a tech enthusiast I love to explore new technology. I have a strong passion for learing more and more.
-                        This website compiles my diverse experiences.
-                    </p>
+        <div class="main" onclick="closeNav()">
+            <div id="home">
+                <div id="des">
+                    <span style="color: #df5d20">Namaste, World! I am</span>
+                    <span style="
+                            font-weight: bold;
+                            color: #df5d20;
+                            font-size: 3rem;
+                        "
+                        >Shubham Goel</span
+                    >
+                    <span style="font-size: 2rem;">I'm <span style="color: #df5d20; font-size: 2rem;" class="typed" data-typed-items="a Student,a Coder,a Web Developer"></span></span>
                 </div>
-                <div class="two">
-                    <img src="img/photo.jpg" alt="Profile Pic" class="ppic">
-                </div>
-                <br>
-                <div class="three">
-                    <h3>Details</h3>
-                    <p>
-                        <b>Name: </b>Shubham Goel<br>
-                        <b>Location: </b>New Delhi,India<br>
-                        <b>Mail: </b>sshubhamgoel24@gmail.com<br>
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <section id="experience" class="even">
-            <h2>Experience</h2>
-            <p>
-                “You can do anything you set your mind to.”
-                <br>- Benjamin Franklin
-            </p>
-
-            <hr>
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Cureya </h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Technical Intern</li>
-                            <li>July 2021 - Present</li>
-                        </ul>
-                    </p>
-                </div>
+                <img id="headimg" src="./img/Mainimg.svg" alt="Try Reloading" />
             </div>
 
-            <div class="contain">
-                <div class="left">
-                    <h4>CodeSpeedy </h4>
+            <div class="sector" id="about" style="background-color: #f3f3f3">
+                <div class="vertxt" style="color: rgba(223, 93, 32, 0.1)">
+                    About Me
                 </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Frontend Web Developer Intern</li>
-                            <li>Feburary 2021 - May 2021</li>
-                        </ul>
-                    </p>
+                <div class="section">
+                    <span class="heading" style="color: #746565"
+                        >Know Me More</span
+                    >
+                    <div class="abtme-content">
+                        <div class="imganimate">
+                            <img
+                                src="./img/abtmeimg.png"
+                                class="abtresponsiveimg"
+                                alt="Know me more"
+                            />
+                        </div>
+
+                        <div class="abtme-txt">
+                            <p>
+                                I am a Full Stack Web Developer & I enjoy building, learning & exploring things that live
+                                on the web..
+                            </p>
+                            <p>
+                                I am pursuing B.Tech in Information Technology 
+                                from GGSIPU,Delhi and my primary focus
+                                and inspiration for my studies is Software Development.
+                            </p>
+                            <p>
+                                In my free time, I watch movies and play online
+                                video games. I am both self-driven and
+                                self-motivated, and I am constantly
+                                experimenting with new technologies and
+                                techniques. I also like to take photographs.
+                            </p>
+                            <p>
+                                I am very passionate about Web Development, and
+                                strive to better myself as a developer, and the
+                                development community as a whole.
+                            </p>
+                            <a
+                                href="https://drive.google.com/file/d/1dZI-ewlj26XSxpxVDA3s9s4fe5oHEwJP/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div class="resume">
+                                    <i class="bx bx-file"></i
+                                    ><span>View Resume</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="sector"
+                id="education"
+                style="background-color: #ff9462"
+            >
+                <div class="vertxt" style="color: rgba(225, 225, 225, 0.1)">
+                    Education
+                </div>
+                <div class="section">
+                    <span class="heading" style="color: #ffffff"
+                        >Loves To Learn</span
+                    >
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                Dr. Akhilesh Das Gupta Institute of Technology & Management
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Bachelor of Technology(IT) </span>
+                                <span class="date"> Aug 2019 - Present </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        Guru Gobind Singh Indraprastha University
+                                    </li>
+                                    <li>
+                                        CGPA: 9.09 (Till 5th Sem)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/NIEC.jpg"
+                                alt="NIEC"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                New Green Field Public School
+                            </span>
+                            <div class="card-subheading">
+                                <span class="date"> Apr 2005 - Mar 2019 </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        12th Percentage- 79%
+                                    </li>
+                                    <li>
+                                        10th CGPA: 8.4
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/NGFS.png"
+                                alt="NIEC"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="sector"
+                id="experience"
+                style="background-color: #efefef"
+            >
+                <div class="vertxt" style="color: rgba(223, 93, 32, 0.1)">
+                    Work Experience
+                </div>
+                <div class="section">
+                    <span class="heading" style="color: #746565"
+                        >Loves Teamwork</span
+                    >
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                Microsoft
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Future Ready Talent Intern </span>
+                                <span class="date"> Oct 2021 – Dec 2021 </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        Learned about Azure and submitted a project on it.
+                                    </li>
+                                    <li>
+                                        Among first 1000 interns to complete the internship.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/Microsoft.png"
+                                alt="Microsoft"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                LetsGrowMore
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Web Development Intern </span>
+                                <span class="date"> Sep 2021 – Oct 2021 </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        Worked on various Full Stack development projects.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/LGM.jpg"
+                                alt="LGM"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                Cureya
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Web Development Intern </span>
+                                <span class="date"> Jul 2021 – Sep 2021 </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        Got to learn a lot about working in teams as we worked on several web projects.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/Cureya.png"
+                                alt="Cureya"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                CodeSpeedy
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Web Development Intern </span>
+                                <span class="date"> Feb 2021 – May 2021 </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        Submitted various Front-End projects.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/CodeSpeedy.webp"
+                                alt="CodeSpeedy"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="contain">
-                <div class="left">
-                    <h4>Street Music</h4>
+            <div
+                class="sector"
+                id="Courses"
+                style="background-color: #ff9462"
+            >
+                <div class="vertxt" style="color: rgba(225, 225, 225, 0.1)">
+                    Courses & Certificates
                 </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Campus Ambassador Intern</li>
-                            <li>April 2020 - May 2020</li>
-                        </ul>
-                    </p>
+                <div class="section">
+                    <span class="heading" style="color: #ffffff"
+                        >Loves To Gain Knowledge</span
+                    >
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                Coding Ninjas
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Certificate of Excellence - DS & Algo in C++ </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="https://ninjasfiles.s3.amazonaws.com/certificate944686a765d8b535b74a757080d024eb09eb59.pdf">View Certificate</a>
+                                    </li>
+                                    <li>
+                                        This was a great course and helped me understand all the basics of C++, data structures & algorithms.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/CodingN.png"
+                                alt="CodingNinjas"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                Coursera
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Web Design Specialization by University Of Michigan </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="http://coursera.org/verify/specialization/7597DPJEGAZ8">View Certificate</a>
+                                    </li>
+                                    <li>
+                                        This course taught me all about HTML, CSS, JavaScript and Bootstrap. It was a wonderful experience doing it.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/Coursera.png"
+                                alt="Coursera"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                HackerRank
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Problem Solving (Basic) Skill Certification </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="https://www.hackerrank.com/certificates/982084685fba">View Certificate</a>
+                                    </li>
+                                    <li>
+                                        Cleared this HackerRank Skill Certification Test. It covered basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/hackerrank_logo.png"
+                                alt="HackerRank"
+                            />
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-heading">
+                                Coursera
+                            </span>
+                            <div class="card-subheading">
+                                <span class="role"> Python Specialization by University Of Michigan </span>
+                            </div>
+                            <div class="respon">
+                                <ul>
+                                    <li>
+                                        <a target="_blank" href="http://coursera.org/verify/specialization/8PMN575BXDWU">View Certificate</a>
+                                    </li>
+                                    <li>
+                                        The course was on Python3 and covered wide range of topics like basics of python, DS, SQL, accesing web with python. It helped me get an overall overview of python programming.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-img">
+                            <img
+                                class="comp-logo"
+                                src="./img/Coursera.png"
+                                alt="Coursera"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <hr>
-
-            <h3>Personal Projects</h3>
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Sensory Maze Escape Game</h4>
+            <div class="sector" id="projects" style="background-color: #efefef">
+                <div class="vertxt" style="color: rgba(223, 93, 32, 0.1)">
+                    Projects
                 </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li><a href="https://drive.google.com/file/d/1cxFETednghBgmL6qz-m-H6iXGNNnQp3-/view?usp=sharing" target="blank" class="link">Apk Link</a></li>
-                            <li>Made using Unity and C# for the Toycathon 2021</li>
-                            <li>Game inspired by temple run but built for blind people with verbal and vibration guidance and an easy-to-use UI.</li>
-                        </ul>
-                    </p>
+                <div class="section">
+                    <span class="heading" style="color: #746565"
+                        >Loves To Develop</span
+                    >
+                    <div class="project">
+                        <div class="project-img">
+                            <img
+                                src="./img/Mernbook.png"
+                                alt="Mernbook"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <span class="project-heading">
+                                MERN-Book
+                            </span>
+                            <div class="project-des">
+                                <ul>
+                                    <li>
+                                        Live Site: - <a target="_blank" href="https://mernbook.shubhamgoel.tech/">mernbook.shubhamgoel.tech</a>
+                                    </li>
+                                    <li>
+                                        A full stack website inspired from Facebook
+                                    </li>
+                                    <li>
+                                        Made using MongoDB, Express, node.js, and many node.js libraries like mongoose, passport, nodemailer, noty.
+                                    </li>
+                                    <li>
+                                        Features:
+                                        <ul>
+                                            <li>
+                                                Authentication using passport.js and Google OAuth
+                                            </li>
+                                            <li>
+                                                Group chat with all the online users using socket.io
+                                            </li>
+                                            <li>
+                                                Create and delete, post and comments
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ts">
+                                <img src="./img/mongodb.png" alt="mongodb" />
+                                <img src="./img/express.png" alt="express" />
+                                <img src="./img/node.png" alt="nodejs" />
+                                <img src="./img/socketsio.webp" alt="socketsio">
+                                <img src="./img/passportjs.png" alt="passportjs">
+                            </div>
+                            <div class="buttons">
+                                <a
+                                    href="https://github.com/shubhamgoel24/MERN-Book"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div class="button">
+                                        <i class="bx bxl-github"></i
+                                        ><span>View Github Repo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-img">
+                            <img
+                                src="./img/Todo.png"
+                                alt="To-Do"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <span class="project-heading">
+                                To-Do List App
+                            </span>
+                            <div class="project-des">
+                                <ul>
+                                    <li>
+                                        Live Site: - <a target="_blank" href="https://todo.shubhamgoel.tech/">todo.shubhamgoel.tech</a>
+                                    </li>
+                                    <li>
+                                        App to help schedule tasks. Made using React, MongoDB, Express & node.js.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ts">
+                                <img src="./img/mongodb.png" alt="mongodb" />
+                                <img src="./img/express.png" alt="express" />
+                                <img src="./img/react.png" alt="react">
+                                <img src="./img/node.png" alt="nodejs" />
+                            </div>
+                            <div class="buttons">
+                                <a
+                                    href="https://github.com/shubhamgoel24/MernTodo"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <div class="button">
+                                        <i class="bx bxl-github"></i
+                                        ><span>View Github Repo</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project">
+                        <div class="project-img">
+                            <img
+                                src="./img/Maze.jpg"
+                                alt="Maze"
+                            />
+                        </div>
+                        <div class="project-content">
+                            <span class="project-heading">
+                                Sensory Maze Escape Game
+                            </span>
+                            <div class="project-des">
+                                <ul>
+                                    <li>
+                                        Live Site: - <a target="_blank" href="https://drive.google.com/file/d/1cxFETednghBgmL6qz-m-H6iXGNNnQp3-/view">Click Here For APK</a>
+                                    </li>
+                                    <li>
+                                        Made using Unity and C# for the Toycathon 2021.
+                                    </li>
+                                    <li>
+                                        Game inspired by temple run but built for blind people with verbal and vibration guidance and an easy-to-use UI.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="ts">
+                                <img src="./img/unity.png" alt="unity" />
+                                <img src="./img/android.png" alt="android" />
+                                <img src="./img/chash.png" alt="c#">
+                            </div>
+                        </div>
+                    </div>          
                 </div>
             </div>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>ROLL-A-DICE</h4>
+            <div class="sector" id="skills" style="background-color: #f3f3f3">
+                <div class="vertxt" style="color: rgba(223, 93, 32, 0.1)">
+                    Skill Summary
                 </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li><a href="http://www.shubhamgoel24.me/Roll-A-Dice/index.html" target="blank" class="link">shubhamgoel24.me/Roll-A-Dice</a></li>
-                            <li>A simple rolling dice to play. Made using HTML, JS & CSS.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>PORTFOLIO WEBSITE</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li><a href="http://www.shubhamgoel24.me" target="blank" class="link">shubhamgoel24.me</a></li>
-                            <li>Made a portfolio website from scratch using HTML, JS & CSS.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>CALCULATOR</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li><a href="http://www.shubhamgoel24.me/Calculator/index.html" target="blank" class="link">shubhamgoel24.me/Calculator</a></li>
-                            <li>A simple calculator using HTML, CSS, and JavaScript.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Simple Paint App</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li><a href="https://shubhamgoel24.me/SimplePaintApp/" target="blank" class="link">shubhamgoel24.me/SimplePaintApp/</a></li>
-                            <li>Paint like app to rectangles of random color with ability to move and delete them on double click.</li>
-                            <li>Made using Canvas in HTML, JavaScript and CSS.</li>
-                        </ul>
-                    </p>
+                <div class="section">
+                    <span class="heading" style="color: #746565"
+                        >Likes To Learn</span
+                    >
+                    <div class="tech">
+                        <div class="tech-stacks">
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/mongodb.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/express.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Express</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/react.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>ReactJS</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/node.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/cpp.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>C++</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/firebase.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Firebase</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/jquery.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>jQuery</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/aws.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>AWS</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/html.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>HTML</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/css.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>CSS</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/js.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/socketsio.webp"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Socket.io</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/linux.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Linux</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/passportjs.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Passport.js</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/azure.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>Azure</span>
+                            </div>
+                            <div class="tech-stack">
+                                <img
+                                    src="./img/sass.png"
+                                    class="responsiveimg"
+                                    alt=""
+                                />
+                                <span>SCSS & SASS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <p>
-                “Protons give an atom its identity, electrons its personality.”
-                <br>- Bill Bryson, A short history of nearly everything
-            </p>
-            <hr>
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Northern India Engineering College (GGSIPU)</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Bachelor of Technology (IT)</li>
-                            <li>2019 - 2023</li>
-                            <li>New Delhi, India</li>
-                        </ul>
-                    </p>
-                </div>
-            </div> 
-            
-            <div class="contain">
-                <div class="left">
-                    <h4>New Green Field School (CBSE)</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>High School</li>
-                            <li>2005 - 2019</li>
-                            <li>New Delhi, India</li>
-                        </ul>
-                    </p>
+            <div class="footer-box">
+                <div class="footer">
+                    <div class="contact">
+                        <a
+                            href="https://github.com/shubhamgoel24"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="bx bxl-github bx-lg footer-logo"></i
+                        ></a>
+                    </div>
+                    <div class="contact">
+                        <a
+                            href="https://www.linkedin.com/in/shubhamgoel24/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="bx bxl-linkedin"></i
+                        ></a>
+                    </div>
+                    <div class="contact">
+                        <a
+                            href="mailto:sshubhamgoel24@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            ><i class="bx bx-mail-send"></i
+                        ></a>
+                    </div>
                 </div>
             </div>
-
-            <hr>
-
-            <h3>Courses & Certificates</h3>
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Coding Ninjas</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Certificate of Excellence - DS & Algo in C++</li>
-                            <li><a href="https://ninjasfiles.s3.amazonaws.com/certificate944686a765d8b535b74a757080d024eb09eb59.pdf" target="blank" class="link">View Certificate</a></li>
-                            <li>This was a great course and helped me understand all the basics of C++, data structures & algorithms.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Coursera</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Web Design Specialization by University Of Michigan</li>
-                            <li><a href="http://coursera.org/verify/specialization/7597DPJEGAZ8" target="blank" class="link">View Certificate</a></li>
-                            <li>This course taught me all about HTML, CSS, JavaScript and Bootstrap. It was a wonderful experience doing it.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>HackerRank</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Problem Solving (Basic) Skill Certification</li>
-                            <li><a href="https://www.hackerrank.com/certificates/982084685fba" target="blank" class="link">View Certificate</a></li>
-                            <li>Cleared this HackerRank Skill Certification Test. It covered basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching).</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-            
-            <br>
-
-            <div class="contain">
-                <div class="left">
-                    <h4>Coursera</h4>
-                </div>
-                <div class="right">
-                    <p class="pleft">
-                        <ul>
-                            <li>Python Specialization by University Of Michigan</li>
-                            <li><a href="http://coursera.org/verify/specialization/8PMN575BXDWU" target="blank" class="link">View Certificate</a></li>
-                            <li>The course was on Python3 and covered wide range of topics like basics of python, DS, SQL, accesing web with python. It helped me get an overall overview of python programming.</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="even">
-            <h2>Skills</h2>
-            <p>
-                “Life without knowledge is death in disguise.”
-                <br>- Talib Kweli
-            </p>
-            <hr>
-            <br>
-
-            <ul class="sklist">
-                <li>
-                    C++
-                    <br>
-                    <progress value="90" max="100"></progress>
-                </li>
-    
-                <li>
-                    Python
-                    <br>
-                    <progress value="80" max="100"></progress>
-                </li>
-    
-                <li>
-                    HTML
-                    <br>
-                    <progress value="95" max="100"></progress>
-                </li>
-    
-                <li>
-                    CSS
-                    <br>
-                    <progress value="95" max="100"></progress>
-                </li>
-    
-                <li>
-                    JavaScript
-                    <br>
-                    <progress value="90" max="100"></progress>
-                </li>
-
-                <li>
-                    Bootstrap
-                    <br>
-                    <progress value="80" max="100"></progress>
-                </li>
-
-                <li>
-                    Node.js
-                    <br>
-                    <progress value="40" max="100"></progress>
-                </li>
-
-                <li>
-                    Express.js
-                    <br>
-                    <progress value="40" max="100"></progress>
-                </li>
-
-                <li>
-                    jQuery
-                    <br>
-                    <progress value="90" max="100"></progress>
-                </li>
-
-                <li>
-                    MongoDB
-                    <br>
-                    <progress value="40" max="100"></progress>
-                </li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                “If I had asked people what they wanted, they would have said faster horses. ”
-                <br>- Henry Ford
-            </p>
-            <hr>
-            <br>
-
-            <p>
-                <a href="mailto:sshubhamgoel24@gmail.com">
-                    <i class="fas fa-envelope"></i> sshubhamgoel24@gmail.com
-                </a><br><br>
-                        
-                <a href="https://www.linkedin.com/in/shubhamgoel24/" target="blank">
-                    <i class="fab fa-linkedin-in"></i> linkedin.com/in/shubhamgoel24/
-                </a><br><br>
-
-                <a href="https://github.com/shubhamgoel24" target="blank">
-                    <i class="fab fa-github"></i></i> github.com/shubhamgoel24
-                </a><br><br>
-
-                
-            </p>
-
-        </section>
-
-    </main>
-</body>
+        </div>
+        <!-- <footer onclick="closeNav()"></footer> -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+    <!-- <div id="particles-js"></div>  -->
+</html>
